@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.sign-up-form {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	height: 100vh;
+}
+
+.sign-up-form-background {
+	position: relative;
+	flex: 1 1 30rem;
+	height: 100%;
+}
+
+.background-img {
+	height: 100%;
+}
+
+.sign-up-form-text {
+	flex: 5 1 30rem;
+}
+
+.logo {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	top: 15vh;
+	left: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+h1 {
+	color: white;
+	display: flex;
+	align-items: center;
+}
+.logo-img {
+	object-fit: contain;
+	width: 15%;
+	height: 100%;
+}
+
+.sign-up-form-background > img {
+	width: 100%;
+}
+
+.sign-up-form-text > div:nth-child(1) {
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	font-weight: 600;
+	font-size: 1.2rem;
+	background-color: rgba(0, 0, 0, 0.05);
+	padding-bottom: 20px;
+}
+
+.sign-up-form-text > div:nth-child(1) p {
+	width: 95%;
+	margin-left: auto;
+}
+
+.form-wrapper {
+	position: relative;
+	min-height: 70vh;
+}
+
+.form-wrapper > div:nth-child(1) {
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 3px 3px rgba(0, 0, 0, 0.1);
+	padding-bottom: 25px;
+	position: relative;
+}
+
+.form-wrapper > div > * {
+	width: 95%;
+	margin-left: auto;
+}
+
+button {
+	padding: 10px 25px;
+	color: white;
+	border: none;
+	background-color: rgb(100, 110, 75);
+	border-radius: 5px;
+}
+h3 {
+	padding: 20px 0px;
+}
+
+.button-sign-in-later {
+	position: absolute;
+	top: calc(100% + 25px);
+}
+
+.form-row {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	width: 85%;
+}
+
+.form-column {
+	display: flex;
+	flex-direction: column;
+	padding-right: 50px;
+	flex: 1 1 20rem;
+}
+
+input {
+	width: 100%;
+	border-radius: 2px;
+	border-color: rgba(0, 0, 0, 0.1);
+	outline: none;
+	padding: 5px;
+}
+
+.credits {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: white;
+}
+
+@media all and (max-width: 1000px) {
+	.form-row {
+		width: 100%;
+	}
+
+	.form-column {
+		padding-right: 5px;
+	}
+
+	.sign-up-form-background {
+		height: auto;
+	}
+
+	.sign-up-form-text > div:nth-child(1) {
+		justify-content: center;
+	}
+}
